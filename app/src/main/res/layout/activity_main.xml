@@ -7,27 +7,25 @@
     android:visibility="visible"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/rollValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="256dp"
-        android:fontFamily="casual"
-        android:text="@string/rollValue"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-        android:textColor="@android:color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
-        android:id="@+id/rollDice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="@string/roll"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rollValue" />
+            android:id="@+id/rollDice"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="@string/roll"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rollState"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+            android:layout_width="176dp"
+            android:layout_height="200dp"
+            tools:srcCompat="@drawable/dice_1"
+            android:id="@+id/rollState"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="128dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
